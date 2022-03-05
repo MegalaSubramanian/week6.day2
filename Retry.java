@@ -9,7 +9,7 @@ package week6.assignment;
 	import org.testng.annotations.ITestAnnotation;
 	import org.testng.internal.annotations.TestAnnotation;
 
-	public class Retry implements IRetryAnalyzer, IAnnotationTransformer{
+	public class Retry implements IRetryAnalyzer{
 		
 		int count = 1;
 		public boolean retry(ITestResult result) {
@@ -19,9 +19,6 @@ package week6.assignment;
 			}
 			return false;
 			}
-		  public void transform(
-			      ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
-			  }
-		
+		 
 		}
 
