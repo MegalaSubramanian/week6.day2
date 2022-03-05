@@ -18,7 +18,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class IncidentDelete extends IncidentBaseClass{
 
-	@Test(groups = { "smoke" }, retryAnalyzer=Retry.class)
+	@Test(groups = { "smoke" })
 	public void delete() throws InterruptedException {
 		driver.findElement(By.xpath("(//div[text() ='All'])[2]")).click();
 		driver.switchTo().frame(0);
