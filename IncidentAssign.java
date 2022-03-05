@@ -30,7 +30,7 @@ public class IncidentAssign extends IncidentBaseClass{
 		WebElement search = driver.findElement(By.xpath("(//input[@class='form-control'])[1]"));
 		Actions builder = new Actions(driver);
 		builder.click(search).perform();
-		search.sendKeys("INC0000018", Keys.ENTER);
+		search.sendKeys("INC0000003", Keys.ENTER);
 		driver.findElement(By.xpath("(//tbody[@class='list2_body'])/tr[1]/td[3]")).click();
 		WebElement assign = driver.findElement(By.id("lookup.incident.assignment_group"));
 		builder.click(assign).perform();
