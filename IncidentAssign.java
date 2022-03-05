@@ -22,7 +22,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class IncidentAssign extends IncidentBaseClass{
 
-	@Test(groups = { "sanity" })
+	@Test(groups = { "sanity" }, retryAnalyzer=Retry.class)
 	public void assign() throws IOException, InterruptedException {
 		
 		driver.findElement(By.xpath("(//div[text()='Open'])[1]")).click();
