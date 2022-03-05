@@ -21,7 +21,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class IncidentCreate extends IncidentBaseClass {
 	
-	@Test(groups = { "smoke" })
+	@Test(groups = { "smoke" }, retryAnalyzer=Retry.class)
 	public void create() throws InterruptedException {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("(//div[text() ='All'])[2]")).click();
