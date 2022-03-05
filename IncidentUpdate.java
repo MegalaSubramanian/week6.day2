@@ -20,7 +20,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class IncidentUpdate extends IncidentBaseClass{
 	
-	@Test(groups = { "smoke" })
+	@Test(groups = { "smoke" }, retryAnalyzer=Retry.class)
 	public void update() throws IOException, InterruptedException {
 		driver.findElement(By.xpath("(//div[text() ='All'])[2]")).click();
 		driver.switchTo().frame(0);
